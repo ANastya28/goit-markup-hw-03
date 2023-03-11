@@ -57,6 +57,19 @@ body {
     display: inline-block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     max-width: 1128px;
     padding-left: 15px;
@@ -412,8 +425,7 @@ img {
 
 .footer-text {
     color: var(--footer-text-color);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 
     width: 264px;
 }

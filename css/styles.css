@@ -84,12 +84,10 @@ body {
 
 .section-portfolio {
     padding-top: 96px;
-    padding-bottom: 120px;
 }
 
 .section-works {
     padding-top: 0;
-    padding-bottom: 120px; 
 }
 
 /* .section.no-padding {
@@ -260,13 +258,21 @@ img {
     height: auto;
 }
 
-.benefits{
+.benefits {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
 }
 
+.benefits .item{
+flex-basis: calc((100% - 72px) /4);
+}
+
+
+/* 
 .benefits .item +.item {
     margin-left: 24px;
-}
+} */
 
 .servis {
     display: flex;
@@ -296,7 +302,6 @@ img {
 .we .item-descr {
     padding-top: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid var(--border-portfolio-color);
 }
 
 .portfolio {
@@ -318,8 +323,8 @@ img {
     border-right: 1px solid var(--border-portfolio-color);
     padding-top: 32px;
     padding-left: 16px;
-    padding-right: auto;
 }
+
 /* .portfolio .item.item:nth-child(3n) {
 
 } */
@@ -423,11 +428,17 @@ img {
 
 }
 
+.footer a {
+    margin-bottom: 16px;
+}
+
+.footer .logo-deskr{
+    width: 264px;
+}
+
 .footer-text {
     color: var(--footer-text-color);
     margin: 0;
-
-    width: 264px;
 }
 
 .logo-footer {
@@ -439,7 +450,5 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-     
-    margin-bottom: 16px;
 }
 
